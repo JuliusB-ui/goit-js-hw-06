@@ -4,12 +4,6 @@ const categories = document.querySelectorAll(".item");
 console.log(categories);
 console.log(`Number of categories: ${categories.length}`);
 
-for (const category of categories) {
-  console.log(`Category: ${category.firstElementChild.innerText}`);
-  console.log(
-    `Elements: ${category.firstElementChild.nextElementSibling.children.length}`
-  );
-}
 // Category: Animals
 // Elements: 4
 
@@ -18,3 +12,10 @@ for (const category of categories) {
 
 // Category: Technologies
 // Elements: 5
+
+for (const category of categories) {
+  console.log(`Category: ${category.firstElementChild.innerText}`);
+  console.log(
+    `Elements: ${category.firstElementChild.nextElementSibling.children.length}`
+  );
+}
